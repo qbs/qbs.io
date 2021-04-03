@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h2 class="h1">{{ .Title }}</h2>
+
+<details>
+<summary>Table Of Contents</summary>
+{{ .TableOfContents }}
+</details>
+
+<br>
+
+<article class="content">
+    {{ .Content }}
+</article>
+{{ end }}

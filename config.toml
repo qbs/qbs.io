@@ -1,0 +1,30 @@
+baseURL = "https://qbs.io"
+languageCode = "en-us"
+title = "Qbs"
+theme = "qbs"
+
+[params]
+    description = "Better build system."
+
+[markup.goldmark.renderer]
+    unsafe = "true"
+
+[menu]
+
+    [[menu.main]]
+        identifier = "info"
+        name = "Information"
+        url = "/info"
+        weight = -110
+
+    [[menu.main]]
+        identifier = "docs"
+        name = "Documentation"
+        url = "/docs"
+        weight = -105
+
+    [[menu.main]]
+        identifier = "download"
+        name = "Download"
+        url = "/download"
+        weight = -90
