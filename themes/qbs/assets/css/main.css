@@ -49,7 +49,16 @@ main article table.alignedsummary {
     @apply border;
 }
 
-main article table td {
+main article table td, main article table th {
     @apply border;
     @apply p-3;
+}
+
+.naviNextPrevious, .headerNavi, .footerNavi, .sidebar, main article > li {
+    display: none;
+}
+
+main article {
+    @apply mt-8;
+    @apply mb-8;
 }
