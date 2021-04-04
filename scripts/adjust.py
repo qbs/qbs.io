@@ -16,7 +16,7 @@ trimmed = """---
 """ + trimmed
 
 trimmed = trimmed.replace(".html", "/")
-trimmed = trimmed.replace("href=\"", "href=\"/")
+trimmed = trimmed.replace("href=\"", "href=\"/docs/")
 trimmed = trimmed.replace("index/", "/docs")
 
 Path(argv[1]).write_text(trimmed)
