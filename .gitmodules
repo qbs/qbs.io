@@ -1,0 +1,3 @@
+[submodule "static/_qbs"]
+	path = scripts/_qbs
+	url = https://code.qt.io/qbs/qbs.git

@@ -19,3 +19,37 @@
 .effect-shadow {
     filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.25));
 }
+
+main a {
+    color: #00D485;
+    text-decoration: underline;
+}
+
+main h1, main .title {
+    @apply text-2xl;
+    @apply font-bold;
+}
+
+main h2, main .subtitle {
+    @apply text-xl;
+    @apply font-medium;
+}
+
+main li {
+    @apply ml-4;
+}
+
+main p + p {
+    @apply mt-3;
+}
+
+main table.alignedsummary {
+    @apply mt-2;
+    @apply mb-2;
+    @apply border;
+}
+
+main table td {
+    @apply border;
+    @apply p-3;
+}
