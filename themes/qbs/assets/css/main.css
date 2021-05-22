@@ -35,6 +35,14 @@ main article h2, main article .subtitle {
     @apply font-medium;
 }
 
+.content h2 {
+    @apply text-2xl;
+}
+
+.content h3 {
+    @apply text-xl;
+}
+
 main article li {
     @apply ml-4;
 }
