@@ -39,6 +39,13 @@ main article h2, main article .subtitle {
     @apply mb-8;
 }
 
+main article h3 {
+    @apply text-xl;
+    @apply font-medium;
+    @apply mt-2;
+    @apply mb-4;
+}
+
 .content h2 {
     @apply text-2xl;
 }
@@ -117,6 +124,10 @@ main article {
     @apply w-full;
     @apply pl-4;
     @apply pr-4;
+}
+
+.centre-inner.docs {
+    @apply max-w-screen-lg;
 }
 
 .blog pre {
