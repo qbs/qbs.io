@@ -118,5 +118,5 @@ main article {
     @apply dark:border-gray-600;
     @apply p-4;
     @apply rounded;
-    @apply overflow-x-scroll;
+    @apply overflow-x-auto;
 }
