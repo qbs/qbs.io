@@ -26,13 +26,17 @@ main article a {
 }
 
 main article h1, main article .title {
-    @apply text-2xl;
+    @apply text-3xl;
     @apply font-bold;
+    @apply mt-4;
+    @apply mb-8;
 }
 
 main article h2, main article .subtitle {
-    @apply text-xl;
+    @apply text-2xl;
     @apply font-medium;
+    @apply mt-4;
+    @apply mb-8;
 }
 
 .content h2 {
@@ -43,8 +47,14 @@ main article h2, main article .subtitle {
     @apply text-xl;
 }
 
+main article ul {
+    @apply mt-3;
+    @apply mb-3;
+}
+
 main article li {
     @apply ml-4;
+    list-style: disc;
 }
 
 main article p + p {
