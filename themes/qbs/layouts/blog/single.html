@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<div class="centre-outer content mt-8">
+    <div class="centre-inner">
+        <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+        <time>{{ .Date.Format "Jan 2, 2006" }} by {{ .Param "author" }}</time>
+        <article class="content blog">
+            {{ .Content }}
+        </article>
+    </div>
+</div>
+
+{{ end }}

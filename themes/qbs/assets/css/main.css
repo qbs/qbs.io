@@ -70,3 +70,53 @@ main article {
     @apply mt-8;
     @apply mb-8;
 }
+
+.blog h2, .blog h3 {
+    @apply font-medium;
+}
+
+.blog h2 {
+    @apply mt-8;
+}
+
+.blog h3 {
+    @apply mt-3;
+}
+
+.blog ul {
+    @apply list-disc;
+}
+
+.blog ol {
+    @apply list-decimal;
+}
+
+.blog p, .blog ul, .blog ol {
+    @apply max-w-full;
+}
+
+.centre-outer {
+    @apply flex;
+    @apply md:flex-col;
+    @apply items-center;
+    @apply mt-8;
+}
+
+.centre-inner {
+    @apply max-w-screen-md;
+    @apply w-full;
+    @apply pl-4;
+    @apply pr-4;
+}
+
+.blog pre {
+    @apply px-8;
+    @apply py-4;
+    @apply my-4;
+    @apply border;
+    @apply border-gray-50;
+    @apply dark:border-gray-600;
+    @apply p-4;
+    @apply rounded;
+    @apply overflow-x-scroll;
+}

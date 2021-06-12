@@ -12,9 +12,9 @@ theme = "qbs"
 [menu]
 
     [[menu.main]]
-        identifier = "info"
-        name = "Information"
-        url = "/info"
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog"
         weight = -110
 
     [[menu.main]]
