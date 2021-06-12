@@ -44,6 +44,10 @@ main article h3 {
     @apply font-medium;
     @apply mt-2;
     @apply mb-4;
+    @apply border-b;
+    @apply pb-1;
+    @apply border-gray-50;
+    @apply dark:border-gray-600;
 }
 
 .content h2 {
@@ -130,7 +134,7 @@ main article {
     @apply max-w-screen-lg;
 }
 
-.blog pre {
+.blog pre, main article pre {
     @apply px-8;
     @apply py-4;
     @apply my-4;
