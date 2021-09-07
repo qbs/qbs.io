@@ -2,20 +2,44 @@
 
 <div class="bg-banner h-96 grid place-items-center">
     <div class="flex md:flex-row flex-col items-center">
-        <img class="effect-shadow" src="/img/Cubes.svg">
+        <img class="effect-shadow z-0" src="/img/Cubes.svg">
 
         <div class="flex flex-col pt-4 md:pt-0 md:pl-8 text-center md:text-left items-center md:items-start text-white text-4xl font-extrabold">
             <h2>Build Simply. Build Quickly.</h2>
 
-            <a href="" class="pt-2 font-medium text-3xl">Get Started</a>
+            <a href="/docs/overview/" class="pt-2 font-medium text-3xl underline">Get Started</a>
         </div>
     </div>
 </div>
 
-<div class="centre-outer content mt-4">
-    <div class="centre-inner">
+<main class="centre-outer content mt-4">
+    <article class="centre-inner mt-0">
         <h2>Overview</h2>
-        Qbs is an open source build system.
+
+        <p>
+            Qbs is an open source, cross-platform build system that simplifies the process of building software.
+        </p>
+
+        <p>
+            Key features:
+        </p>
+
+        <ul>
+            <li>Simple, easy-to-write build recipes</li>
+            <li>Fast build system with parallel builds and tests</li>
+            <li>Portable build recipes</li>
+            <li>First-class support for many platforms</li>
+        </ul>
+
+        Starting a new project is as simple as writing a short file:
+
+        <pre><code>CppApplication {
+    files: [
+        "*.cpp"
+    ]
+}</code></pre>
+
+        And running <code>qbs</code>.
     </div>
 </div>
 
