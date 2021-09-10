@@ -26,5 +26,5 @@ theme = "qbs"
     [[menu.main]]
         identifier = "getqbs"
         name = "Get Qbs"
-        url = "/getqbs"
+        url = "/docs/installing/"
         weight = -90
