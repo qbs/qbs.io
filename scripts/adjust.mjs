@@ -13,8 +13,10 @@ Promise.all(args.map(async (arg) => {
     const elm = dom.window.document.body
     elm.querySelectorAll("[href]").forEach((it) => {
         let attr = it.getAttribute("href")
-
-        if (attr == "index.html") {
+        
+        if (/(?:^[a-z][a-z0-9+\.-]*:|\/\/)/.test(attr)) {
+            // pass
+        } else if (attr == "index.html") {
             attr = "/docs"
         } else {
             attr = "/docs/" + attr.replace(".html", "/")
