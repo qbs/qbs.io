@@ -11,11 +11,13 @@ if [ -z "${QT_INSTALL_DOCS}" ]; then
         echo "Either QT_INSTALL_DOCS must be set or qmake should be in PATH"
         exit 1
     else
-        export QT_INSTALL_DOCS=$(dirname ${QMAKE_PATH})/../doc
+        QT_INSTALL_DOCS=$(dirname "${QMAKE_PATH}")/../doc
+        export QT_INSTALL_DOCS
     fi
 fi
 
-export QBS_VERSION=$(cat _qbs/VERSION)
+QBS_VERSION=$(cat _qbs/VERSION)
+export QBS_VERSION
 export QBS_VERSION_TAG=${QBS_VERSION//[.-]/}
 
 pushd _qbs/doc || exit 1
