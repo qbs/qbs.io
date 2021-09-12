@@ -13,16 +13,27 @@ Promise.all(args.map(async (arg) => {
     const elm = dom.window.document.body
     elm.querySelectorAll("[href]").forEach((it) => {
         let attr = it.getAttribute("href")
-        
+
         if (/(?:^[a-z][a-z0-9+\.-]*:|\/\/)/.test(attr)) {
             // pass
+        } else if (attr.startsWith("#")) {
+            // pass
         } else if (attr == "index.html") {
-            attr = "/docs"
+            attr = "{{< BaseURL >}}/docs"
         } else {
-            attr = "/docs/" + attr.replace(".html", "/")
+            attr = "{{< BaseURL >}}/docs/" + attr.replace(".html", "/")
         }
 
         it.setAttribute("href", attr)
+    })
+    elm.querySelectorAll("img").forEach((it) => {
+        let attr = it.getAttribute("src")
+
+        if (attr.startsWith("images/")) {
+            attr = `{{< BaseURL >}}/img/docs/${attr.slice('images/'.length)}`
+        }
+
+        it.setAttribute("src", attr)
     })
     elm.querySelectorAll(".qmlproto").forEach((it) => {
         const readOnly = it.querySelector(".qmlreadonly") !== null

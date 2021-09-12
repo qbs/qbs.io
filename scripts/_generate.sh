@@ -26,4 +26,7 @@ echo "postprocessing with adjust.mjs..."
 
 ./adjust.mjs ../content/docs/*.html || exit 1
 
+mkdir -p ../static/img/docs/ || exit 1
+
 mv ../content/docs/index.html ../content/docs/_index.html
+mv ../content/docs/images/* ../static/img/docs/
