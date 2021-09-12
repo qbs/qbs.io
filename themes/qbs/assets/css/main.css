@@ -61,6 +61,17 @@ main article h3 {
     @apply dark:border-gray-600;
 }
 
+main article h4 {
+    @apply text-lg;
+    @apply font-medium;
+    @apply mt-2;
+    @apply mb-4;
+    @apply border-b;
+    @apply pb-1;
+    @apply border-gray-50;
+    @apply dark:border-gray-600;
+}
+
 .content h2 {
     @apply text-2xl;
 }
