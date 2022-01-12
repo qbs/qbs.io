@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['themes/qbs/layouts/**/*.html', 'layouts/**/*.html'],
+  content: ['themes/qbs/layouts/*/*.html'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
