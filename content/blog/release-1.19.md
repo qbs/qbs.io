@@ -9,13 +9,14 @@ The [Qbs build tool](http://qbs.io) version 1.19.0 is available.
 Qbs is a community-driven language-agnostic build automation system. It is fast
 and offers an easy-to-learn language based upon QML.
 
-What's new
-----------
+## What's new
 
 About 151 contributions went into this release since version 1.18.0. We have
 selected a few items below. Have a look into the complete
 [changelog](https://code.qt.io/cgit/qbs/qbs.git/tree/changelogs/changes-1.19.0.md)
 if you are interested in more details.
+
+<!--more-->
 
 ### Codesign module
 

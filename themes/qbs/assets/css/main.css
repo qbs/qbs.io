@@ -65,7 +65,7 @@ main article {
     @apply flex;
     @apply md:flex-col;
     @apply items-center;
-    @apply md:mt-8;
+    @apply mt-8;
 }
 
 .centre-inner {

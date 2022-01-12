@@ -3,21 +3,16 @@
 <div class="centre-outer content mt-8">
     <div class="centre-inner">
         {{ range .Pages }}
-        <a href="{{ .RelPermalink }}">
-        <div class="w-full border border-gray-50 dark:border-gray-600 p-4 rounded">
-            <time>{{ .Date.Format "Jan 2, 2006" }}</time>
-            <h2>{{ .Title }}</h2>
+        <div class="w-full border border-gray-50 dark:border-gray-600 mb-8 p-4 rounded prose dark:prose-invert">
+            <h2><a href="{{ .Permalink }}" class="">{{ .Title }}</a></h2>
+            <time>{{ .Date.Format "Jan 2, 2006" }} by {{ .Param "author" }}</time>
 
-            {{ $scratch := newScratch }}
-            {{ with .Description }}
-                {{ $scratch.Set "summary" (markdownify .) }}
-            {{ else }}
-                {{ $scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+            {{ .Summary | markdownify }}
+
+            {{ if .Truncated }}
+            <a href="{{ .Permalink }}">Read More</a>
             {{ end }}
-
-            <p> {{ $scratch.Get "summary" }} </p>
         </div>
-        </a>
         {{ end }}
     </div>
 </div>
