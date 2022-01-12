@@ -24,13 +24,13 @@ body {
     font-size: 1.25rem;
 }
 
-main article a {
+main article a[href] {
     color: #009356;
     text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
-    main article a {
+    main article a[href] {
         color: #00D485;
         text-decoration: underline;
     }
@@ -158,7 +158,7 @@ main article {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .centre-inner.docs .content {
@@ -171,7 +171,22 @@ main article {
     width: 20ch;
     max-width: 20ch;
 
+    @apply mr-4;
     @apply p-4;
+}
+
+.centre-inner.docs .sidebar a {
+    text-decoration: none;
+}
+.centre-inner.docs .sidebar li {
+    list-style: none;
+    margin-left: 0;
+}
+.centre-inner.docs .sidebar li.level2 {
+    margin-left: 1rem;
+}
+.centre-inner.docs .sidebar li.level3 {
+    margin-left: 2rem;
 }
 
 .blog pre, main article pre {
