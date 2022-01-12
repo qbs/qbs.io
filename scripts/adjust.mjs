@@ -47,7 +47,7 @@ Promise.all(args.map(async (arg) => {
         }
         it.outerHTML = `<h3 class="qmlproto">${readOnly ? `<span class="opacity-50">readonly </span>` : ""}${name.textContent}: ${type.outerHTML}</h3>`
     })
-    if (elm.querySelector(".sidebar-content")?.childElementCount <= 0) {
+    if (elm.querySelector(".sidebar")?.innerText === "") {
         elm.querySelector(".sidebar")?.remove()
     }
 

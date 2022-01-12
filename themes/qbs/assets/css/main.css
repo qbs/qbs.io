@@ -162,7 +162,7 @@ main article {
 }
 
 .centre-inner.docs .content {
-    max-width: 820px;
+    @apply max-w-screen-lg;
 }
 
 .centre-inner.docs .sidebar {
