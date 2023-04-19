@@ -92,7 +92,7 @@ Try it
 Qbs is available for download on the
 [download page](https://download.qt.io/official_releases/qbs/1.19.0).
 Please report issues in our [bug tracker](https://bugreports.qt.io/browse/QBS/). Join our [Discord
-server](https://discord.gg/tw5HHyY) for live discussions. You can use our
+server](https://discord.gg/zhMHvC5GNa) for live discussions. You can use our
 [mailing list](https://lists.qt-project.org/mailman/listinfo/qbs)
 for questions and discussions. The [documentation](https://doc.qt.io/qbs/index.html)
 and [wiki](https://wiki.qt.io/Qbs) are also good places to get started.
