@@ -111,7 +111,7 @@ bug reports/suggetions).
 Qbs is available for download on the [download
 page](https://download.qt.io/official_releases/qbs/1.21.0). Please
 report issues in our [bug tracker](https://bugreports.qt.io/browse/QBS/). Join our [Discord
-server](https://discord.gg/tw5HHyY) for live discussions. We are not
+server](https://discord.gg/zhMHvC5GNa) for live discussions. We are not
 using IRC anymore. You can use our [mailing list](https://lists.qt-project.org/mailman/listinfo/qbs)
 for questions and discussions. The [documentation](https://doc.qt.io/qbs/index.html)
 and [wiki](https://wiki.qt.io/Qbs) are also good places to get started.
