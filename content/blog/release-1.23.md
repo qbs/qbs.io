@@ -46,7 +46,7 @@ release by the Qbs development team. It can also be installed through
 the native package management system on a number of Linux distributions.
 Please find a complete overview on
 [repology.org](https://repology.org/project/qbs/versions).
-Qbs 1.23.0 is also included in Qt Creator 7.0.0 which was released recently.
+Qbs 1.23.0 is also included in Qt Creator 8.0.0 which was released recently.
 
 ## Contribute
 
