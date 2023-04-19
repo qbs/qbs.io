@@ -68,6 +68,10 @@ main article {
     @apply mt-8;
 }
 
+.centre-outer * {
+	@apply scroll-mt-24;
+}
+
 .centre-inner {
     @apply max-w-screen-md;
     @apply w-full;
