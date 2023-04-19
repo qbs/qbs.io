@@ -11,7 +11,7 @@ if [ -z "${QT_INSTALL_DOCS}" ]; then
         echo "Either QT_INSTALL_DOCS must be set or qmake should be in PATH"
         exit 1
     else
-        QT_INSTALL_DOCS=$(dirname "${QMAKE_PATH}")/../doc
+        QT_INSTALL_DOCS="$(qmake -query QT_INSTALL_DOCS)"
         export QT_INSTALL_DOCS
     fi
 fi
