@@ -1,6 +1,6 @@
 ---
 title: The State of the Project
-date: '2023-05-24'
+date: '2023-05-25'
 author: Ivan Komissarov
 ---
 
@@ -9,6 +9,8 @@ author: Ivan Komissarov
 It's been a while since The Qt Company
 [discontinued](https://www.qt.io/blog/2018/10/29/deprecation-of-qbs) development of the Qbs project
 and it became an open-source project, and it seems the current status is not clear for many people.
+
+<!--more-->
 
 Qbs is now maintained by a small group of enthusiasts and we had 14 releases with lots of features
 since The Qt Company discontinued the development. Originally, Qbs was planned to be used as a
