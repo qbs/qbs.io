@@ -24,6 +24,7 @@ Before building with Hugo, do the following:
   [here](https://discussions.apple.com/docs/DOC-3083).
 - Second, create a symlink in ~/Sites pointing to the `public/` folder in this repo, e.g.:
   `ls -s ~/Sites/qbs-io ~/Developer/qbs-io/public`.
+- Third, you'd need additional python packages: pip install beautifulsoup4 lxml
 - Ensure qmake and qdoc are in PATH: `export PATH=/Applications/Qt/6.7.0/macos/bin/:$PATH`.
 - Run `./_generate.sh` to rebuild docs.
 - Run `hugo -b http://localhost/~${USER}/qbs-io`.

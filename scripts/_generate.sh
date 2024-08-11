@@ -22,6 +22,7 @@ export QBS_VERSION_TAG=${QBS_VERSION//[.-]/}
 
 pushd _qbs/doc || exit 1
 qdoc qbs-hugo.qdocconf --outputdir=../../../content/docs
+python3 fix-qmlimports.py ../../../content/docs
 popd || exit 1
 
 echo "postprocessing with adjust.mjs..."
