@@ -35,18 +35,6 @@ Promise.all(args.map(async (arg) => {
 
         it.setAttribute("src", attr)
     })
-    elm.querySelectorAll(".qmlproto").forEach((it) => {
-        const readOnly = it.querySelector(".qmlreadonly") !== null
-
-        const name = it.querySelector(".name")
-        let type = it.querySelector(".type a")
-        if (!type) {
-            type = {outerHTML: it.querySelector(".type").textContent}
-        } else {
-            type = type.outerHTML
-        }
-        it.outerHTML = `<h3 class="qmlproto">${readOnly ? `<span class="opacity-50">readonly </span>` : ""}${name.textContent}: ${type.outerHTML}</h3>`
-    })
     if (elm.querySelector(".sidebar")?.innerText === "") {
         elm.querySelector(".sidebar")?.remove()
     }
