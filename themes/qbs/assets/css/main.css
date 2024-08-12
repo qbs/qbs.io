@@ -127,6 +127,7 @@ main article {
     white-space: nowrap;
     font-weight: bold;
     font-size: 125%;
+    margin: 0;
 }
 
 .qmltype {
