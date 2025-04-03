@@ -10,7 +10,7 @@
 
     {{ $styles := resources.Get "css/main.css" | postCSS }}
 
-    {{ if .Hugo.IsServer }}
+    {{ if hugo.IsServer }}
       <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     {{ else }}
       {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
