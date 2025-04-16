@@ -1,6 +1,6 @@
 ---
 title: Qbs 2.6.1 released
-date: '2024-04-11'
+date: '2025-04-11'
 author: Ivan Komissarov
 ---
 
