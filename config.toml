@@ -3,6 +3,14 @@ languageCode = "en-us"
 title = "Qbs"
 theme = "qbs"
 
+# Hugo v0.162+ blocks HTML content files by default; qdoc generates content/docs/*.html.
+# Hugo v0.161+ restricts Node.js filesystem access; PostCSS/autoprefixer needs parent dirs.
+[security]
+allowContent = ['.*']
+
+[security.node.permissions]
+allowRead = ['*']
+
 [params]
     description = "Better build system."
 
